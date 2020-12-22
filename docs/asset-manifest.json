@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/medport/static/css/main.50c6ef94.chunk.css",
-    "main.js": "/medport/static/js/main.db2d7683.chunk.js",
-    "main.js.map": "/medport/static/js/main.db2d7683.chunk.js.map",
-    "runtime-main.js": "/medport/static/js/runtime-main.d423ea42.js",
-    "runtime-main.js.map": "/medport/static/js/runtime-main.d423ea42.js.map",
-    "static/css/2.9a547d2e.chunk.css": "/medport/static/css/2.9a547d2e.chunk.css",
-    "static/js/2.c87c2d3c.chunk.js": "/medport/static/js/2.c87c2d3c.chunk.js",
-    "static/js/2.c87c2d3c.chunk.js.map": "/medport/static/js/2.c87c2d3c.chunk.js.map",
-    "index.html": "/medport/index.html",
-    "precache-manifest.a47b4c5c94b2d342a2f0751265e5e65e.js": "/medport/precache-manifest.a47b4c5c94b2d342a2f0751265e5e65e.js",
-    "service-worker.js": "/medport/service-worker.js",
-    "static/css/2.9a547d2e.chunk.css.map": "/medport/static/css/2.9a547d2e.chunk.css.map",
-    "static/css/main.50c6ef94.chunk.css.map": "/medport/static/css/main.50c6ef94.chunk.css.map",
-    "static/js/2.c87c2d3c.chunk.js.LICENSE.txt": "/medport/static/js/2.c87c2d3c.chunk.js.LICENSE.txt",
-    "static/media/dashboard-picture.png": "/medport/static/media/dashboard-picture.da245a3e.png",
-    "static/media/default-profile-icon.png": "/medport/static/media/default-profile-icon.10238340.png",
-    "static/media/home-bg-doctor-patient-online.png": "/medport/static/media/home-bg-doctor-patient-online.abe47494.png",
-    "static/media/opaque-upload-profile.png": "/medport/static/media/opaque-upload-profile.60e6efcd.png",
-    "static/media/pencil-edit-icon.png": "/medport/static/media/pencil-edit-icon.2a1c7262.png"
+    "main.css": "/MedPort/static/css/main.50c6ef94.chunk.css",
+    "main.js": "/MedPort/static/js/main.dc4bf5fd.chunk.js",
+    "main.js.map": "/MedPort/static/js/main.dc4bf5fd.chunk.js.map",
+    "runtime-main.js": "/MedPort/static/js/runtime-main.fe44dad9.js",
+    "runtime-main.js.map": "/MedPort/static/js/runtime-main.fe44dad9.js.map",
+    "static/css/2.9a547d2e.chunk.css": "/MedPort/static/css/2.9a547d2e.chunk.css",
+    "static/js/2.e75f7c17.chunk.js": "/MedPort/static/js/2.e75f7c17.chunk.js",
+    "static/js/2.e75f7c17.chunk.js.map": "/MedPort/static/js/2.e75f7c17.chunk.js.map",
+    "index.html": "/MedPort/index.html",
+    "precache-manifest.1617e8ee626b6b4addbc03083109506c.js": "/MedPort/precache-manifest.1617e8ee626b6b4addbc03083109506c.js",
+    "service-worker.js": "/MedPort/service-worker.js",
+    "static/css/2.9a547d2e.chunk.css.map": "/MedPort/static/css/2.9a547d2e.chunk.css.map",
+    "static/css/main.50c6ef94.chunk.css.map": "/MedPort/static/css/main.50c6ef94.chunk.css.map",
+    "static/js/2.e75f7c17.chunk.js.LICENSE.txt": "/MedPort/static/js/2.e75f7c17.chunk.js.LICENSE.txt",
+    "static/media/dashboard-picture.png": "/MedPort/static/media/dashboard-picture.da245a3e.png",
+    "static/media/default-profile-icon.png": "/MedPort/static/media/default-profile-icon.10238340.png",
+    "static/media/home-bg-doctor-patient-online.png": "/MedPort/static/media/home-bg-doctor-patient-online.abe47494.png",
+    "static/media/opaque-upload-profile.png": "/MedPort/static/media/opaque-upload-profile.60e6efcd.png",
+    "static/media/pencil-edit-icon.png": "/MedPort/static/media/pencil-edit-icon.2a1c7262.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.d423ea42.js",
+    "static/js/runtime-main.fe44dad9.js",
     "static/css/2.9a547d2e.chunk.css",
-    "static/js/2.c87c2d3c.chunk.js",
+    "static/js/2.e75f7c17.chunk.js",
     "static/css/main.50c6ef94.chunk.css",
-    "static/js/main.db2d7683.chunk.js"
+    "static/js/main.dc4bf5fd.chunk.js"
   ]
 }
