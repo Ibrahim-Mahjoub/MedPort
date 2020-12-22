@@ -1,6 +1,7 @@
 {
   "name": "team34-app",
   "version": "0.1.0",
+  "homepage": "https://imahjoub.com/medport",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.0.0",
