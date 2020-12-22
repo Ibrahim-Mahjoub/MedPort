@@ -46,7 +46,7 @@ class App extends React.Component {
     render(){
 
         return (
-            <BrowserRouter>
+            <BrowserRouter basename="/MedPort">
                 <Switch>
                     <Route
                         exact path={["/", "/dashboard", "/admin/institutions"] /* any of these URLs are accepted. */ }
