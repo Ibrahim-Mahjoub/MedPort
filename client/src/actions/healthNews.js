@@ -6,7 +6,7 @@ export const getTopHealthNews = (component) => {
     const url = "/api/news"
     
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();

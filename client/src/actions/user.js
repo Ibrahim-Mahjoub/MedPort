@@ -7,7 +7,7 @@ export const getUserType = (username, callback, component) => {
     const url = ApiRoutes.getUserType + username;
     var userType = null;
     
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -32,7 +32,7 @@ export const getUserType = (username, callback, component) => {
 
 // A function to check if a user is logged in on the session cookie
 export const readCookie = (app) => {
-    fetch(ApiRoutes.checkSession)
+    fetch(ApiRoutes.checkSession, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -67,7 +67,8 @@ export const login = (loginComp, app) => {
         headers: {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     // Send the request with fetch()
@@ -95,7 +96,7 @@ export const login = (loginComp, app) => {
 export const logout = (app) => {
     const url = ApiRoutes.logout;
 
-    fetch(url)
+    fetch(url, { credentials: 'include' })
         .then(res => {
             app.setState({
                 loggedInUser: null,
@@ -118,7 +119,7 @@ export const getUserProfileInfo = (id, callback, profileComponent) => {
         url += id;
     }
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -155,7 +156,8 @@ export const updateUserProfileInfo = (profileDetail, profileComponent) => {
         headers: {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     return fetch(request)
@@ -184,7 +186,7 @@ export const updateUserProfileInfo = (profileDetail, profileComponent) => {
 export const getUserProfileImage = (component) => {
     const url = ApiRoutes.profile + "image";
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -214,7 +216,8 @@ export const updateUserProfileImage = (imageBase64, component) => {
         headers: {
             Accept: "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     return fetch(request)
@@ -251,6 +254,7 @@ export const checkUserName = (username) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	return fetch(request).then(res => {

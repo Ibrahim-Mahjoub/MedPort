@@ -6,7 +6,7 @@ import { ApiRoutes } from "../constants/apiRoutes";
 export const getUserUploadedFiles = (component) => {
     const url = ApiRoutes.filesUploaded;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -36,7 +36,8 @@ export const addFile = (fileInfo) => {
         headers: {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     return fetch(request)
@@ -59,7 +60,7 @@ export const addFile = (fileInfo) => {
 export const getPatientFiles = (patientId, component) => {
     const url = ApiRoutes.files + patientId;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -82,7 +83,7 @@ export const getPatientFiles = (patientId, component) => {
 export const getFilesForPatient = (patientId) => {
     const url = ApiRoutes.files + "patients/" + patientId;
 
-    return fetch(url).then(res => {
+    return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -97,7 +98,7 @@ export const getFilesForPatient = (patientId) => {
 export const getLoggedInPatientFiles = () => {
 	const url = ApiRoutes.files + "patients";
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}

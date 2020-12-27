@@ -6,7 +6,7 @@ import { ApiRoutes } from "../constants/apiRoutes";
 export const getUserRequests = (component) => {
     const url = ApiRoutes.request;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -39,7 +39,8 @@ export const setRequestStatus = (requestId, status) => {
         headers: {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     return fetch(request)
@@ -68,7 +69,8 @@ export const addRequest = (requestInfo) => {
         headers: {
             "Accept": "application/json, text/plain, */*",
             "Content-Type": "application/json"
-        }
+        },
+		credentials: 'include'
     });
 
     return fetch(request)

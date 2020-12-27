@@ -6,7 +6,7 @@ import { ApiRoutes } from '../constants/apiRoutes';
 export const getReferralCode = (code) => {
 	const url = ApiRoutes.referral;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			// parse json
             return res.json();
@@ -34,6 +34,7 @@ export const submitReferralCode = (code) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server

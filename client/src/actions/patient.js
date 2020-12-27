@@ -14,6 +14,7 @@ export const addPatient = (patient) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server
@@ -39,7 +40,7 @@ export const addPatient = (patient) => {
 export const getPatients = () => {
 	const url = ApiRoutes.patient;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -60,6 +61,7 @@ export const deletePatient = (patientID) => {
 	// creating the request
 	const request = new Request(url, {
 		method: "delete",
+		credentials: 'include'
 	});
 	
 	return fetch(request).then(res => {
@@ -79,7 +81,7 @@ export const deletePatient = (patientID) => {
 export const getPatient = (patientID) => {
 	const url = ApiRoutes.patient + "/" + patientID;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -104,6 +106,7 @@ export const updatePatient = (patientID, propertiesToChange) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server

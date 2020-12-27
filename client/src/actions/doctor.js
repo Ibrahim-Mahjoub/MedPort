@@ -6,7 +6,7 @@ import { ApiRoutes } from "../constants/apiRoutes";
 export const getDoctorByID = (doctorID, callback) => {
     const url = ApiRoutes.doctorById + doctorID;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -29,7 +29,7 @@ export const getDoctorByID = (doctorID, callback) => {
 export const getPatientsByDoctorID = (doctorID) => {
     const url = ApiRoutes.patientsByDoctorId + doctorID;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -59,6 +59,7 @@ export const addDoctor = (doctor) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server
@@ -83,7 +84,7 @@ export const addDoctor = (doctor) => {
 export const getDoctors = () => {
 	const url = ApiRoutes.doctor;
 	
-	return fetch(url).then(res => {
+	return fetch(url,{ credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -104,6 +105,7 @@ export const deleteDoctor = (doctorID) => {
 	// creating the request
 	const request = new Request(url, {
 		method: "delete",
+		credentials: 'include'
 	});
 	
 	return fetch(request).then(res => {
@@ -123,7 +125,7 @@ export const deleteDoctor = (doctorID) => {
 export const getDoctor = (doctorID) => {
 	const url = ApiRoutes.doctor + "/" + doctorID;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -137,7 +139,7 @@ export const getDoctor = (doctorID) => {
 export const getPatientsByDoctor = (doctorID) => {
 	const url = ApiRoutes.doctor + "/patients/" + doctorID;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -151,7 +153,7 @@ export const getPatientsByDoctor = (doctorID) => {
 export const getPatientsByLoggedInDoctor = () => {
 	const url = ApiRoutes.doctor + "/patients";
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -176,6 +178,7 @@ export const updateDoctor = (doctorID, propertiesToChange) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server

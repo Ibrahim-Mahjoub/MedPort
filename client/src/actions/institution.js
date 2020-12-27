@@ -6,7 +6,7 @@ import { ApiRoutes } from "../constants/apiRoutes";
 export const getInstitutionInfo = (institutionID, callback) => {
     const url = "/api/institutions/" + institutionID;
 
-    return fetch(url)
+    return fetch(url, { credentials: 'include' })
         .then(res => {
             if (res.status === 200) {
                 return res.json();
@@ -40,6 +40,7 @@ export const addInstitution = (institution) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server
@@ -66,7 +67,7 @@ export const getInstitutions = async () => {
 	const url = ApiRoutes.institution;
 	
 	// return a promise
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		// parse json
 		if (res.status === 200) {
 			return res.json();
@@ -90,6 +91,7 @@ export const deleteInstitution = (institutionID) => {
 	// creating the request
 	const request = new Request(url, {
 		method: "delete",
+		credentials: 'include'
 	});
 	
 	return fetch(request).then(res => {
@@ -110,7 +112,7 @@ export const deleteInstitution = (institutionID) => {
 export const getInstitution = (institutionID) => {
 	const url = ApiRoutes.institution + "/" + institutionID;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -128,7 +130,7 @@ export const getInstitution = (institutionID) => {
 export const getDoctorsByInstitution = (institutionID) => {
 	const url = ApiRoutes.institution + "/doctors/" + institutionID;
 	
-	return fetch(url).then(res => {
+	return fetch(url, { credentials: 'include' }).then(res => {
 		if (res.status === 200) {
 			return res.json();
 		}
@@ -153,6 +155,7 @@ export const updateInstitution = (institutionID, institution) => {
 			"Accept": "application/json, text/plain, */*",
 			"Content-Type": "application/json"
 		},
+		credentials: 'include'
 	});
 	
 	// making the request to the server
