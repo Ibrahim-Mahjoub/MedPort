@@ -1,5 +1,5 @@
 // export const baseUrl = 'http://localhost:5000'; // LEAVE THIS UNCOMMENTED
-export const baseUrl = '';
+export const baseUrl = 'https://medport.6261636b656e64.live';
 export const ApiRoutes = {
     login: baseUrl + '/api/users/login',
     getUserType: baseUrl  +'/api/users/userType/',
