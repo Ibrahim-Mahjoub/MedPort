@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0a941c1b4e9adddd1aa1e3bd032e9f38",
+    "revision": "3969349d328a828e8e3f9e85f933cecf",
     "url": "/MedPort/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MedPort/static/css/2.9a547d2e.chunk.css"
   },
   {
-    "revision": "dc8b93420ac314113dd1",
+    "revision": "4348c6854e96364c10b0",
     "url": "/MedPort/static/css/main.50c6ef94.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MedPort/static/js/2.e75f7c17.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dc8b93420ac314113dd1",
-    "url": "/MedPort/static/js/main.dc4bf5fd.chunk.js"
+    "revision": "4348c6854e96364c10b0",
+    "url": "/MedPort/static/js/main.3fead359.chunk.js"
   },
   {
     "revision": "28976257643301474b8e",
